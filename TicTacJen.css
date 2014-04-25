@@ -1,0 +1,58 @@
+	body {
+		background-image: url(../images/bg.png);
+		background-repeat: both;
+	}
+
+	h1, h3 { 
+		text-align: center; 
+		color: #6633ff;
+	}
+	
+	.board { 
+		width: 456px; 
+		margin: 50px auto;
+	}
+
+	.cell {
+		width:150px; 
+		height:150px; 
+		background-color: rgba(150, 150, 150, 0.75);
+		margin:1px; 
+		float:left; 
+		border-radius: 1%;
+	}
+
+	.cell:hover {
+		background-color: rgba(255, 75, 200, 0.75)
+	}
+
+	.clear {
+		clear:both;
+	}
+
+	.x, .o {
+		background-size: cover;
+	}
+
+	.x {
+		background-image:url(../images/godzilla.jpg);
+
+	}
+
+	.o {
+		background-image:url(../images/bunny.jpg);
+	}
+
+	#win {
+		width: 458px;
+		height: 408px;
+		color: white;
+		font-size: 5em;
+		padding-top: 50px;
+		text-align: center;
+		background-color: rgba(255,75,200,0.6);
+		margin: 0 auto;
+		position: relative;
+		top: -530px;
+		display: none;
+	}

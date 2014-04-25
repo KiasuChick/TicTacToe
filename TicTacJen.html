@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+<script src="https://cdn.firebase.com/v0/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/0.6.0/angularfire.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+</head>
+
+<body>
+	<h1>Tic Tac Jen!</h1>
+
+	<div class= "board" x-ng-app="TicTac" x-ng-controller="TicTacCtrl">
+		<div x-ng-repeat="c in obj.board track by $index"
+		  x-ng-class="{clear:$index % 3 == 0, cell:true, x: c == 'X', o: c == 'O'}"
+		  x-ng-click="makeMove($index);"
+		  > 
+		</div>
+		<h3 x-ng-click="reset();">RESET</h3>
+	</div>
+	<div id="win"></div>
+	
+</body>
+</html>

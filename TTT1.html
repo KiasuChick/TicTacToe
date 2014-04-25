@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<link rel="stylesheet" href="TTT1.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script type="text/javascript" src="TTT1.js"></script>
+</head>
+<body x-ng-app="" x-ng-controller="TTTController"> 
+
+	
+		<div class="gameDiv" x-ng-repeat="cell in cells track by $index" x-ng-click="playerClick($index)" x-ng-class="{newline : $index%3==0}"></div>
+
+
+
+</body>
+</html>
