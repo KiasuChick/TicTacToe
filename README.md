@@ -1,6 +1,6 @@
 FROM GENERAL ASSEMBLY...
 
-FIRST PROJECT
+##FIRST PROJECT
 
 Let's start out with something fun -- a game! We'll be making Tic Tac Toe -- a basic, single-device game at first, then a two-player game that works on multiple devices.
 
