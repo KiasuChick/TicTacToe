@@ -10,7 +10,7 @@
 <body x-ng-app="" x-ng-controller="TTTController"> 
 
 	
-		<div class="gameDiv" x-ng-repeat="cell in cells track by $index" x-ng-click="playerClick($index)" x-ng-class="{newline : $index%3==0}"></div>
+		<div class="gameDiv" x-ng-repeat="cell in cells track by $index" x-ng-click="playerClick($index)" x-ng-class="{newline : $index%3==0}">{{cell}}</div>
 
 
 
