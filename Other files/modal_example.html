@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
+<meta charset=utf-8 />
+<link rel="stylesheet" href="modal_example.css" />
+<script type="text/javascript" src="modal_example.js"></script>
+
+
+
+</head>
+<body ng-app='ModalDemo'>
+  <div ng-controller='MyCtrl'>
+    <button ng-click='toggleModal()'>Open Modal Dialog</button>
+    <modal-dialog show='modalShown' width='400px' height='60%'>
+      <p>
+
+<select id="position" x-ng-model="position" x-ng-options="idx as position for (idx, position) in positions"></select>
+<select id="player" x-ng-model="player" x-ng-options="x for x in players[position]"></select>
+
+      <p>
+    </modal-dialog>
+  </div>
+<script>
+
+</script>
+</body>
+</html>

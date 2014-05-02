@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="TTT example.css"/>
+<script src="quiz.js"></script>
+
+</head>
+
+<body x-ng-app="" x-ng-controller="TTT_ctrl">
+
+<div class="board">
+          <div class="cell" x-ng-repeat="c in cells track by $index" x-ng-click="makeMove($index);">{{c}}</div>
+        </div>
+  
+  <h1 x-ng-bind="player1"></h1>
+
+  <div class="change">Player 1: <input type="text" x-ng-model="player1"></div>
+
+  <h1 x-ng-bind="player2"></h1>
+
+  <div class="change">Player 2: <input type="text" x-ng-model="player2"></div>
+
+
+
+</body>
+</html>
